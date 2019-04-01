@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ula Latush](https://up.htmlacademy.ru/adaptive/16/user/823411).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Ванчугов`.
 
 ---
 
