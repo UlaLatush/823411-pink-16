@@ -9,10 +9,10 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span></span></button>
         <ul class="main-nav__list site--list">
-          <li class="site--list__item site--list__item--active"><a>Главная</a></li>
-          <li class="site--list__item"><a href="">Фотографии</a></li>
-          <li class="site--list__item"><a href="">Конкурс</a></li>
-          <li class="site--list__item"><a href="http://www.htmlacademy.ru">HTML Academy</a></li>
+          <li class="site--list__item site--list__item--active"><a class="main-nav__link">Главная</a></li>
+          <li class="site--list__item"><a class="main-nav__link" href="">Фотографии</a></li>
+          <li class="site--list__item"><a class="main-nav__link" href="">Конкурс</a></li>
+          <li class="site--list__item"><a class="main-nav__link" href="http://www.htmlacademy.ru">HTML Academy</a></li>
         </ul>
       </nav>
       <a class="page-header__logo">
@@ -21,7 +21,7 @@
     </header>
     <main class="page-main">
       <section class="downloads">
-        <a class="" href="" title="Скачать на iTunes">Скачать приложение</a>
+        <a class="downloads__link" href="" title="Скачать на iTunes">Скачать приложение</a>
         <div class="downloads__type">
           <a class="downloads__type  downloads__type--apple" href=""  title="Скачать для iPhone и iPad">Apple</a>
           <a class="downloads__type  downloads__type--android" href=""  title="Скачать для Android">Android</a>
@@ -56,23 +56,59 @@
         </div>
       </section>
       <section class="reviews">
-        <blockquote class="">
+        <blockquote class="reviews__cite">
           <h3 class="reviews__username">Николай Петров</h3>
           <p class="reviews__discription">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </blockquote>
-        <blockquote class="">
+        <blockquote class="reviews__cite">
           <h3 class="reviews__username">Николай Петров</h3>
           <p class="reviews__discription">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </blockquote>
-        <blockquote class="">
+        <blockquote class="reviews__cite">
           <h3 class="reviews__username">Николай Петров</h3>
           <p class="reviews__discription">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </blockquote>
       </section>
       <section class="options">
+        <div class="options__standart">
+          Стандарт 3,99 USD
+        </div>
+        <div class="options__pink">
+          Розовый фильтр
+        </div>
+        <div class="options__smile">
+          Смайлики
+        </div>
+        <div class="options__comment">
+          Комментарии
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__lead">
+          <h2 class="contacts__title">
+            Остались вопросы?
+            <p class="contacts__subtitle">Свяжитесь с нами!</p>
+          </h2>
+        </div>
+        <div class="contacts__inner">
+          <div class="contacts__items">
+            <div class="contacts__item  contacts__item--number">
+              <h3 class="contacts__item-manage">Звоните:</h3>
+              <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item  contacts__item--email">
+              <h3 class="contacts__item-manage">Пишите:</h3>
+              <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item  contacts__item--address">
+              <h3 class="contacts__item-manage">Приезжайте в гости:</h3>
+              <address class="contacts__item-info">ул. Большая Конюшенная, 19/8</address>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
