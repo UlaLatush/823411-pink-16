@@ -16,22 +16,17 @@
       </ul>
     </nav>
   </header>
-  <main class="gallery">
-    <header class="">
-      <h1 class="">Фотографии пользователей</h1>
-      <a class="gallery"  href="#">
-        <img src="http://placehold.it/150x100">
-      </a>
+  <main class="page-gallery">
+    <header class="preview-page">
+      <h1 class="preview-page__title">Фотографии пользователей</h1>
     </header>
-      <div class="gallery__lead">
-        <p>
-          Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?
-        </p>
+      <div class="page-lead">
+        <p class="page-lead__title">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</p>
       </div>
       <article class="post post--main">
-        <a class="post__main" href="#">
-          <img src="http://placehold.it/150x100" alt="Панорама">
+        <a class="post__link" href="#">
+          <img class="post__image--main" src="http://placehold.it/150x100" alt="Панорама">
         </a>
         <span class="post__main-type">
           Панорама дня
@@ -43,7 +38,7 @@
               <span class="post__time">(5 минут назад)</span>
             </header>
             <div class="post__caption">
-              <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="post__caption--text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             </div>
             <div class="post__rate  post__rate--main">
               <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
@@ -55,7 +50,7 @@
         </div>
       </article>
       <article class="post post--card">
-        <a class="post__image" href="#">
+        <a class="post__link" href="#">
           <img src="http://placehold.it/150x100" alt="Машина">
         </a>
         <div class="post__body">
@@ -64,7 +59,7 @@
             <span class="post__time">(5 часов назад)</span>
           </header>
           <div class="post__caption">
-            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="post__caption--text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           </div>
           <div class="post__rate">
             <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
@@ -75,8 +70,8 @@
         </div>
       </article>
       <article class="post post--card">
-        <a class="post__image" href="#">
-          <img src="http://placehold.it/150x100" alt="Барабаны">
+        <a class="post__link" href="#">
+          <img class="post__image" src="http://placehold.it/150x100" alt="Барабаны">
         </a>
         <div class="post__body">
           <header class="post__header">
@@ -84,7 +79,7 @@
             <span class="post__time">(12 часов назад)</span>
           </header>
           <div class="post__caption">
-            <p>Соседи будут рады!</p>
+            <p class="post__caption--text">Соседи будут рады!</p>
           </div>
           <div class="post__rate">
             <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
@@ -95,8 +90,8 @@
         </div>
       </article>
       <article class="post post--card">
-        <a class="post__image" href="#">
-          <img src="http://placehold.it/150x100" alt="Потолок">
+        <a class="post__link" href="#">
+          <img class="post__image" src="http://placehold.it/150x100" alt="Потолок">
         </a>
         <div class="post__body">
           <header class="post__header">
@@ -104,7 +99,7 @@
             <span class="post__time">(20 часов назад)</span>
           </header>
           <div class="post__caption">
-            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="post__caption--text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           </div>
           <div class="post__rate">
             <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
@@ -115,8 +110,8 @@
         </div>
       </article>
       <article class="post post--card">
-        <a class="post__image" href="#">
-          <img src="http://placehold.it/150x100" alt="Кубанская бахча">
+        <a class="post__link" href="#">
+          <img class="post__image" src="http://placehold.it/150x100" alt="Кубанская бахча">
         </a>
         <div class="post__body">
           <header class="post__header">
@@ -124,7 +119,7 @@
             <span class="post__time">(25 часов назад)</span>
           </header>
           <div class="post__caption">
-            <p>Самая кубанская в мире!</p>
+            <p class="post__caption--text">Самая кубанская в мире!</p>
           </div>
           <div class="post__rate">
             <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
@@ -135,8 +130,8 @@
         </div>
       </article>
       <article class="post post--card">
-        <a class="post__image" href="#">
-          <img src="http://placehold.it/150x100" alt="Горы">
+        <a class="post__link" href="#">
+          <img class="post__image" src="http://placehold.it/150x100" alt="Горы">
         </a>
         <div class="post__body">
           <header class="post__header">
@@ -144,7 +139,7 @@
             <span class="post__time">(40 часов назад)</span>
           </header>
           <div class="post__caption">
-            <p>Где снег-то?</p>
+            <p class="post__caption--text">Где снег-то?</p>
           </div>
           <div class="post__rate">
             <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
@@ -155,8 +150,8 @@
         </div>
       </article>
       <article class="post post--card">
-        <a class="post__image" href="#">
-          <img src="http://placehold.it/150x100" alt="Самолет">
+        <a class="post__link" href="#">
+          <img class="post__image" src="http://placehold.it/150x100" alt="Самолет">
         </a>
         <div class="post__body">
           <header class="post__header">
@@ -164,7 +159,7 @@
             <span class="post__time">(45 часов назад)</span>
           </header>
           <div class="post__caption">
-            <p>Всем GM и взаимные лайки!</p>
+            <p class="post__caption--text">Всем GM и взаимные лайки!</p>
           </div>
           <div class="post__rate">
             <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
