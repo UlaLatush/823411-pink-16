@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+<header class="page-header">
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span></span></button>
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+      <li class="main-nav__item"><a href="#">Фотографии</a></li>
+      <li class="main-nav__item"><a href="#">Конкурс</a></li>
+      <li class="main-nav__item"><a href="http://www.htmlacademy.ru">HTML Academy</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="main-contest">
+  <header class="preview-page">
+    <h1 class="preview-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <div class="page-lead">
+    <p class="page-lead__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      Пожалуйста, заполните форму ниже:
+    </p>
+  </div>
+  <div class="contest__inner">
+    <form class="form" method="post" action="http://echo.htmlacademy.ru">
+      <div class="form__body">
+        <div class="form__fieldset  form__fieldset--fullname">
+          <div class="form__field-text  form__field-text--fullname">
+            <label class="form__text-label  form__text-label--fullname" for="user-last-name">Фамилия:</label>
+            <input class="form__text-input  form__text-input--last-name" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *">
+          </div>
+          <div class="form__field-text  form__field-text--fullname">
+            <label class="form__text-label  form__text-label--fullname" for="user-first-name">Имя:</label>
+            <input class="form__text-input  form__text-input--first-name" id="user-first-name" type="text" name="Имя" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="form__field-text  form__field-text--fullname">
+            <label class="form__text-label  form__text-label--fullname" for="user-middle-name">Отчество:</label>
+            <input class="form__text-input  form__text-input--middle-name" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
+          </div>
+        </div>
+      </div>
+      <div class="form__fieldset  form__fieldset--achievements">
+        <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+        <div class="form__fieldset-inner">
+          <div class="form__checkbox-fields  form__checkbox-fields--achievements">
+            <div class="form__checkbox-wrapper">
+              <div class="form__field-checkbox">
+                <input class="form__checkbox-input" type="checkbox" id="achivements[1]" name="Достижения" value="Сделал селфи с акулой" checked>
+                <label class="form__checkbox-label" for="achivements[1]">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__field-checkbox">
+                <input class="form__checkbox-input" type="checkbox" id="achivements[2]" name="Достижения" value="Обгорел на пляже" checked>
+                <label class="form__checkbox-label" for="achivements[2]">Обгорел на пляже</label>
+              </div>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <div class="form__field-checkbox">
+                <input class="form__checkbox-input" type="checkbox" id="achivements[3]" name="Достижения" value="Видел Чака Норриса">
+                <label class="form__checkbox-label" for="achivements[3]">Видел Чака Норриса</label>
+              </div>
+              <div class="form__field-checkbox">
+                <input class="form__checkbox-input" type="checkbox" id="achivements[4]" name="Достижения" value="Накупил сувениров">
+                <label class="form__checkbox-label" for="achivements[4]">Накупил сувениров</label>
+              </div>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <div class="form__field-checkbox">
+                <input class="form__checkbox-input" type="checkbox" id="achivements[5]" name="Достижения" value="Удержал башню" checked>
+                <label class="form__checkbox-label" for="achivements[5]">Удержал башню</label>
+              </div>
+              <div class="form__field-checkbox">
+                <input class="form__checkbox-input" type="checkbox" id="achivements[6]" name="Достижения" value="Разгромил отель">
+                <label class="form__checkbox-label" for="achivements[6]">Разгромил отель</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+</body>
+</html>
