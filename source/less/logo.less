@@ -1,0 +1,26 @@
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+}
+
+.logo__svg {
+  fill: @blue;
+  color: @pink;
+  width: 147px;
+  height: 40px;
+}
+
+.logo[href]:hover .logo__svg {
+  fill: @pink;
+}
+
+.logo[href]:active .logo__svg {
+  fill: @blue;
+  color: @pink;
+  opacity: 0.3;
+}
+
+.logo__glasses {
+  fill: currentColor;
+}

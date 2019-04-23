@@ -1,0 +1,99 @@
+
+.plan__wrapper {
+  position: relative;
+  background-color: @grey;
+  padding-top: 91px;
+  padding-bottom: 42px;
+  max-width: 100%;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: @grey url("../img/bg-triangle-white.svg") no-repeat center top;
+    background-size: 100% 25px;
+    z-index: 0;
+  }
+}
+
+.plan {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+.plan__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100vw + 40px);
+}
+
+.plan__item {
+  position: relative;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 2px solid @grey-border;
+  background-color: @white;
+  padding: 17px 68px 18px 22px;
+}
+
+.plan__header {
+  position: relative;
+  height: 98px;
+  background-color: @main-color;
+  color: @white;
+  text-transform: uppercase;
+  padding-left: 87px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //background-clip: padding-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") no-repeat top left;
+    background-size: 74px 73px;
+  }
+}
+
+.plan__hit {
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  width: 78px;
+  height: 73px;
+  transform: rotate(-45deg);
+  font-weight: 400;
+  text-align: center;
+}
+
+.plan__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.plan__price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.plan__item-img {
+  fill: @green;
+}
+
+.plan__item-img--no {
+  fill: @orange;
+}

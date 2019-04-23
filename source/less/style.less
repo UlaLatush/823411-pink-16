@@ -1,0 +1,91 @@
+@import "variables.less";
+@import "fonts.less";
+@import "main-nav.less";
+@import "downloads.less";
+@import "controls.less";
+@import "logo.less";
+@import "copyright.less";
+@import "social.less";
+@import "page-footer.less";
+@import "form.less";
+@import "page-header.less";
+@import "preview-page.less";
+@import "contest.less";
+@import "gallery.less";
+@import "editor.less";
+@import "contacts.less";
+@import "offers.less";
+@import "post.less";
+@import "upload.less";
+@import "plan.less";
+@import "reviews.less";
+@import "switch.less";
+
+html {
+  font-family: "open sans", sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*::before {
+  box-sizing: inherit;
+}
+
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  //width: 320px;
+  color: @blue;
+  margin: 0;
+  padding: 0;
+  font-family: @font;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  background-color: @white;
+}
+
+.main__header {
+  background-color: @main-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: @white;
+  padding-top: 66px;
+}
+
+.main__wrap::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 396px;
+  bottom: 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.field-share__label {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 4px;
+  padding-bottom: 16px;
+  text-align: center;
+  color: @pink;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.field-share__textarea {
+  height: 200px;
+  color: @main-color;
+}
