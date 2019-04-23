@@ -1,0 +1,47 @@
+.preview-page {
+  background-color: @blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 320px auto;
+  color: @white;
+  padding-top: 66px;
+}
+
+.preview-page__inner {
+  width: 320px;
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 170px;
+  margin: 0 auto;
+
+  &--index {
+    width: auto;
+    padding: 0;
+  }
+
+  &--index::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 320px;
+    height: 396px;
+    bottom: 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.preview-page__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}

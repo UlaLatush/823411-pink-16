@@ -1,0 +1,91 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  color: @white;
+}
+
+.main-nav__logo {
+  display: inline-block;
+  vertical-align: top;
+  margin: 22px 20px;
+  width: 75px;
+  height: 22px;
+}
+
+.main-nav__list {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &--opened {
+    margin-top: 4px;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  margin: 0;
+  background-color: @blue;
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 16px 20px;
+  box-shadow: 0 -1px 0 @black, inset 0 1px 0 rgba(@white, 0.15);
+
+  &:hover,
+  &:focus {
+    color: @pink;
+  }
+
+  &:active {
+    color: rgba(@white, 0.3);
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 19px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover svg path {
+    fill: @pink;
+  }
+
+  &:active svg path {
+    fill: rgba(@pink, 0.3);
+  }
+
+  &--closed svg:first-child {
+    display: none;
+  }
+}
+
+.contacts__item-info {
+  color: @pink;
+}
+
+.contacts__item-info:hover {
+  color: @main-color;
+}
+
+.contacts__item-info:visited {
+  color: @grey;
+}
