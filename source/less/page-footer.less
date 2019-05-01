@@ -3,10 +3,39 @@
   width: 320px;
   margin: 0 auto;
   padding: 40px 20px;
+
+  @media (max-width: @phones-max) {
+    text-align: center;
+
+    &--index {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablets) {
+    display: flex;
+    justify-content: space-between;
+    width: @tablets;
+    padding-top: 36px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: @desktops) {
+    width: @desktops;
+    padding: 70px 10px 68px;
+  }
 }
 
 .page-footer__map-wrapper {
   position: relative;
   height: 200px;
   overflow: hidden;
+
+  @media (min-width: @tablets) {
+    height: 372px;
+  }
+
+  @media (min-width: @desktops) {
+    height: 502px;
+  }
 }

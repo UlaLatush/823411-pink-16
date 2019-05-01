@@ -1,5 +1,9 @@
 .gallery {
   padding-top: 46px;
+
+  @media (min-width: @tablets) {
+    padding-top: 92px;
+  }
 }
 
 .gallery__lead {
@@ -14,6 +18,23 @@
   & p {
     margin: 0;
   }
+
+
+  @media (min-width: @tablets) {
+    width: @tablets;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 76px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktops) {
+    width: @desktops;
+    padding-left: 186px;
+    padding-right: 186px;
+    margin-bottom: 88px;
+  }
 }
 
 .gallery__inner {
@@ -21,4 +42,14 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+
+  @media (min-width: @tablets) {
+    width: @tablets;
+  }
+
+  @media (min-width: @desktops) {
+    width: @desktops;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
