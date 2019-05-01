@@ -9,6 +9,22 @@
   color: @pink;
   width: 147px;
   height: 40px;
+
+  @media (min-width: @desktops) {
+    display: none;
+  }
+}
+
+.logo__img-desktop {
+  display: none;
+
+  @media (min-width: @tablets) {
+    display: none;
+  }
+
+  @media (min-width: @desktops) {
+    display: block;
+  }
 }
 
 .logo[href]:hover .logo__svg {

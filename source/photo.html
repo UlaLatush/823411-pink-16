@@ -41,7 +41,7 @@
 </header>
 <main class="page-gallery">
   <header class="preview-page">
-    <div class="preview-page__inner">
+    <div class="preview-page__inner preview-page__inner--second preview-page__inner--gallery">
       <h1 class="preview-page__title">Фотографии пользователей</h1>
     </div>
   </header>
@@ -51,7 +51,11 @@
     </div>
     <article class="post post--main">
       <a class="post__link--main" href="#">
-        <img class="post__image--main" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+          <img class="post__image--main" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+        </picture>
         <span class="post__rubric--main">Панорама дня</span>
       </a>
       <div class="post__body-wrapper">
@@ -64,7 +68,7 @@
             <p class="post__caption--text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           </div>
           <div class="post__rate  post__rate--main">
-            <button class="post__like-btn  like-btn" type="button" title="Мне нравится">
+            <button class="post__like-btn" type="button" title="Мне нравится">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                 <g>
                   <path class="post__like-img" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"></path>
@@ -82,7 +86,11 @@
       <div class="post-list">
         <article class="post post--card">
           <a class="post__link" href="#">
-            <img src="img/photo-car-mobile@1x.jpg" alt="Машина">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="post__image" src="img/photo-car-mobile@1x.jpg" alt="Машина">
+            </picture>
           </a>
           <div class="post__body">
             <header class="post__header">
@@ -108,7 +116,11 @@
         </article>
         <article class="post post--card">
           <a class="post__link" href="#">
-            <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+            </picture>
           </a>
           <div class="post__body">
             <header class="post__header">
@@ -134,7 +146,11 @@
         </article>
         <article class="post post--card">
           <a class="post__link" href="#">
-            <img class="post__image" src="img/photo-window-mobile@1x.jpg" alt="Потолок">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="post__image" src="img/photo-window-mobile@1x.jpg" alt="Потолок">
+            </picture>
           </a>
           <div class="post__body">
             <header class="post__header">
@@ -160,7 +176,11 @@
         </article>
         <article class="post post--card">
           <a class="post__link" href="#">
-            <img class="post__image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="post__image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
+            </picture>
           </a>
           <div class="post__body">
             <header class="post__header">
@@ -186,7 +206,11 @@
         </article>
         <article class="post post--card">
           <a class="post__link" href="#">
-            <img class="post__image" src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="post__image" src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+            </picture>
           </a>
           <div class="post__body">
             <header class="post__header">
@@ -212,7 +236,11 @@
         </article>
         <article class="post post--card">
           <a class="post__link" href="#">
-            <img class="post__image" src="img/photo-wing-mobile@1x.jpg" alt="Самолет">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="post__image" src="img/photo-wing-mobile@1x.jpg" alt="Самолет">
+            </picture>
           </a>
           <div class="post__body">
             <header class="post__header">
@@ -239,10 +267,6 @@
       </div>
     </div>
   </div>
-
-
-
-
   <section class="upload">
     <div class="upload__lead">
       <p>Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
@@ -250,30 +274,63 @@
     <div class="editor">
       <div class="editor__inner">
         <form class="editor__form" method="post">
-          <figure class="editor__img">
-            <img src="img/photo-road-mobile@1x.jpg" alt="Загруженное изображение">
+          <figure class="editor__image">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+              <img class="editor__image--img" src="img/photo-road-mobile@1x.jpg" alt="Загруженное изображение">
+            </picture>
           </figure>
           <div class="editor__fields">
             <div class="editor__tools-wrapper">
-              <svg class="editor__tool-icon editor__tool-icon--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                <path fill="none" d="M0,0h48v48H0V0z"></path>
-                <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
-              </svg>
-              <svg class="editor__tool-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                <path fill="none" d="M0,0h48v48H0V0z"></path>
-                <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"></path>
-                <rect y="40" width="48" height="3"></rect>
-              </svg>
-              <svg class="editor__tool-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"></path>
-                <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"></path>
-              </svg>
-            </div>
-            <div class="editor__slider-wrapper">
-              <div class="editor__slider">
-                <div class="editor__slider-control"></div>
-                <div class="editor__slider-btn" tabindex="0"></div>
-              </div>
+              <ul class="editor__tools">
+                <li class="editor__tool">
+                  <div class="editor__tool-name">
+                    <svg class="editor__tool-icon  editor__tool-icon--crop  editor__tool-icon--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                      <path fill="none" d="M0,0h48v48H0V0z"></path>
+                      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
+                    </svg>
+                    Обрезка
+                  </div>
+                  <div class="editor__control  editor__control--crop">
+                    <div class="editor__range  editor__range--crop">
+                      <div class="editor__range-scale"><div class="editor__range-value" style="width: 84%"></div></div>
+                      <div class="editor__range-btn" tabindex="0"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="editor__tool">
+                  <div class="editor__tool-name">
+                    <svg class="editor__tool-icon  editor__tool-icon--fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                      <path fill="none" d="M0,0h48v48H0V0z"></path>
+                      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"></path>
+                      <rect y="40" width="48" height="3"></rect>
+                    </svg>
+                    Заливка
+                  </div>
+                  <div class="editor__control  editor__control--fill">
+                    <div class="editor__range  editor__range--fill">
+                      <div class="editor__range-scale"><div class="editor__range-value" style="width: 84%"></div></div>
+                      <div class="editor__range-btn" tabindex="0"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="editor__tool  editor__tool--contrast">
+                  <div class="editor__tool-name">
+                    <svg class="editor__tool-icon  editor__tool-icon--contrast" xmlns="http://www.w3.org/2000/svg" viewBox="-35.422 -7.96 31.92 31.92" width="32" height="32">
+                      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"></path>
+                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"></path>
+                    </svg>
+                    Контраст
+                  </div>
+                  <div class="editor__control  editor__control--contrast">
+                    <div class="editor__range  editor__range--contrast">
+                      <div class="editor__range-scale"><div class="editor__range-value" style="width: 84%"></div></div>
+                      <div class="editor__range-btn" tabindex="0"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div class="editor__controls">
               <div class="editor__controls-inner">
@@ -302,6 +359,7 @@
           <path class="logo__glasses" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"></path>
         </g>
       </svg>
+      <img class="logo__img-desktop" src="img/logo-pink-blue-desktop.svg">
     </a>
     <div class="social">
       <a class="social__link social__link--tw">

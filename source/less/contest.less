@@ -1,5 +1,9 @@
 .contest {
   padding-top: 45px;
+
+  @media (min-width: @tablets) {
+    padding-top: 92px;
+  }
 }
 
 .contest__lead {
@@ -15,9 +19,46 @@
   & p {
     margin: 0;
   }
+
+  @media (min-width: @tablets) {
+    min-width: @tablets;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktops) {
+    min-width: @desktops;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 68px;
+  }
 }
 
+
 .contest__inner {
-  padding-top: 10px;
-  padding-bottom: 15px;
+  .container;
+
+  @media (max-width: @phones-max) {
+    width: 100%;
+    padding: 0;
+  }
+
+  @media (min-width: @tablets) {
+    min-width: @tablets;
+  }
+
+  @media (min-width: @desktops) {
+    min-width: @desktops;
+  }
+}
+
+.contest__lead-fill-form {
+  display: none;
+
+  @media (min-width: @tablets) {
+    display: inline;
+  }
 }

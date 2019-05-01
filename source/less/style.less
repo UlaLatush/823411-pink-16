@@ -20,6 +20,8 @@
 @import "plan.less";
 @import "reviews.less";
 @import "switch.less";
+@import "table.less";
+@import "mixin.less";
 
 html {
   font-family: "open sans", sans-serif;
@@ -45,8 +47,14 @@ body {
   padding: 0;
   font-family: @font;
   font-size: @baseFontSize;
-  line-height: @baseLineHeight;
+  line-height: @headerLineHeight;
   background-color: @white;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 
 .main__header {
