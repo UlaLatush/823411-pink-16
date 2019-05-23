@@ -31,4 +31,3 @@ navToggle.addEventListener("click", function() {
     prevPage.classList.remove("preview-page--short");
   }
 });
-
