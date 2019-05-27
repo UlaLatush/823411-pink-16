@@ -26,6 +26,7 @@
 
     &:active {
       color: rgba(@white, 0.3);
+      background-color: @pink;
     }
   }
 
@@ -48,7 +49,8 @@
     }
   }
 
-  &--submit {
+  &--submit,
+  &--popup {
     padding: 17px 30px 16px;
     border-radius: 3px;
     font-size: 18px;
@@ -56,6 +58,20 @@
     text-transform: uppercase;
     color: @white;
     background-color: @lightgreen;
+
+    &:hover,
+    &:focus {
+      background-color: @stronggreen;
+    }
+
+    &:active {
+      color: rgba(@white, 0.3);
+    }
+
+    &:disabled {
+      background-color: @strongrey;
+      cursor: default;
+    }
   }
 
   &--download {
@@ -63,6 +79,12 @@
     border-radius: 30px;
     color: @white;
     background-color: transparent;
+
+    @media (min-width: @desktops) {
+      font-size: 21px;
+      line-height: 18px;
+      padding: 14px 20px;
+    }
 
     &:hover,
     &:focus {
@@ -72,6 +94,7 @@
 
     &:active {
       color: rgba(@pink, 0.3);
+      background-color: @white;
     }
   }
 }

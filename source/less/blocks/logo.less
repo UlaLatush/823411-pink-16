@@ -2,41 +2,47 @@
   display: inline-block;
   vertical-align: top;
   height: 40px;
+
+  & path {
+    fill: @pink;
+  }
+
+  & .logo__label path,
+  & .logo__star path {
+    fill: @black;
+  }
+
+  &:hover .logo__label path,
+  &:focus .logo__label path,
+  &:hover .logo__star path,
+  &:focus .logo__star path {
+    fill: @pink;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:active .logo__label path,
+  &:active .logo__star path {
+    fill: @black;
+  }
 }
 
 .logo__svg {
   fill: @blue;
-  color: @pink;
   width: 147px;
   height: 40px;
 
-  @media (min-width: @desktops) {
-    display: none;
-  }
-}
-
-.logo__img-desktop {
-  display: none;
-
-  @media (min-width: @tablets) {
+  &--desktop {
     display: none;
   }
 
   @media (min-width: @desktops) {
-    display: block;
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
   }
-}
-
-.logo[href]:hover .logo__svg {
-  fill: @pink;
-}
-
-.logo[href]:active .logo__svg {
-  fill: @blue;
-  color: @pink;
-  opacity: 0.3;
-}
-
-.logo__glasses {
-  fill: currentColor;
 }

@@ -18,19 +18,30 @@
 
 .copyright__caption {
   font-size: @baseFontSize;
+  line-height: @baseLineHeight;
   display: inline-block;
   vertical-align: top;
   padding-top: 3px;
+  color: @black;
+  margin-right: 14px;
+  margin-top: 3px;
 
   @media (min-width: @desktops) {
-    padding-top: 5px;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: @headerFontSize;
+  }
+
+  &:hover {
+    color: @black;
+  }
+
+  &--photo,
+  &--form {
+    margin-left: -16px;
   }
 }
 
 .copyright__owner {
-  display: inline-block;
+  //display: inline-block;
   vertical-align: middle;
   margin-left: 14px;
   width: 27px;

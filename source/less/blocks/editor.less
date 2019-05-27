@@ -128,15 +128,15 @@
   @media (min-width: @desktops) {
     padding-bottom: 57px;
   }
+}
 
-  &--img {
-    display: block;
-    margin: 0;
+.editor__img {
+  display: block;
+  margin: 0;
 
-    @media (min-width: @tablets) {
-      width: 300px;
-      height: 400px;
-    }
+  @media (min-width: @tablets) {
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -154,7 +154,8 @@
   }
 
   @media (min-width: @desktops) {
-    padding-bottom: 57px;
+    padding-bottom: 60px;
+    padding-top: 35px;
     margin-left: 90px;
   }
 }
@@ -364,14 +365,14 @@
   width: 50%;
 }
 
-.editor__range-btn {
+.editor__btn {
   position: absolute;
   display: inline-block;
   width: 14px;
   height: 14px;
   top: 0;
   bottom: 0;
-  left: 50%;
+  //left: 82%;
   transform: translateX(-50%);
   border: 2px solid #d22856;
   border-radius: 50%;
@@ -382,5 +383,29 @@
   &:active,
   &:focus {
     background-color: @pink;
+  }
+
+  &--crop {
+    left: 75%;
+
+    @media (min-width: @desktops) {
+      left: 27%;
+    }
+  }
+
+  &--scale {
+    left: 15%;
+
+    @media (min-width: @desktops) {
+      left: 88%;
+    }
+  }
+
+  &--contrast {
+    left: 50%;
+
+    @media (min-width: @desktops) {
+      left: 58%;
+    }
   }
 }

@@ -37,6 +37,15 @@
   @media (min-width: @desktops) {
     margin-left: 0;
   }
+
+  &:hover svg path,
+  &:focus svg path {
+    fill: @pink;
+  }
+
+  &:active svg path {
+    fill: rgba(@white, 0.3);
+  }
 }
 
 .main-nav__svg {
