@@ -14,9 +14,8 @@
 .main-nav__logo {
   display: inline-block;
   vertical-align: top;
-  margin: 22px 20px;
-  width: 75px;
-  height: 22px;
+  margin: 23px 20px 24px 20px;
+  //margin: 22px 20px 21px;
 
   @media (min-width: @tablets) and (max-width: @tablets-max) {
     margin-top: 27px;
@@ -36,6 +35,7 @@
 
   @media (min-width: @desktops) {
     margin-left: 0;
+    margin-top: 26px;
   }
 
   &:hover svg path,
@@ -189,7 +189,6 @@
   position: absolute;
   top: 21px;
   right: 19px;
-  width: 50px;
   height: 24px;
   padding: 0;
   background-color: transparent;
@@ -205,8 +204,24 @@
     fill: rgba(@pink, 0.3);
   }
 
-  &--closed svg:first-child {
+  & svg:nth-child(odd) {
+    display: block;
+  }
+
+  & svg:nth-child(even) {
     display: none;
+  }
+
+  &--closed {
+    width: 50px;
+  }
+
+  &--closed svg:nth-child(odd) {
+    display: none;
+  }
+
+  &--closed svg:nth-child(even) {
+    display: block;
   }
 
   @media (min-width: @tablets) {

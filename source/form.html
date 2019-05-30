@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+
   <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+
+  <script type="text/javascript" src="js/picturefill.min.js"></script>
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header page-header--open">
   <div class="page-header__wrapper">
     <nav class="main-nav main-nav--nojs">
@@ -76,9 +86,9 @@
         </svg>
       </button>
       <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__item--active" href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="http://www.htmlacademy.ru">HTML Academy</a></li>
       </ul>
     </nav>
@@ -118,7 +128,7 @@
             </div>
           </div>
           <div class="form__fieldset  form__fieldset--achievements">
-            <p class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</h1>
+            <p class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</p>
             <div class="form__fieldset-wrapper">
               <div class="form__checkbox-fields  form__checkbox-fields--achievements">
                 <div class="form__checkbox-wrapper">
@@ -196,7 +206,7 @@
             <p class="form__title form__title--emotions">Опишите свои эмоции</p>
             <div class="form__fieldset-wrapper">
               <div class="form__textarea-fields">
-                <textarea class="form__textarea form__textarea--emotions" name="emotions" id="emotions-field" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях!"></textarea>
+                <textarea class="form__textarea form__textarea--emotions" name="emotions" id="emotions-field" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </div>
           </div>
@@ -253,7 +263,7 @@
         </g>
       </svg>
     </a>
-    <div class="social social--form">
+    <div class="social">
       <a class="social__link social__link--tw">
         <svg class="social__img social__img--tw" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
           <g id="W6EeEF_1_">

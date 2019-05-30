@@ -155,7 +155,7 @@
 
   @media (min-width: @desktops) {
     padding-bottom: 60px;
-    padding-top: 35px;
+    padding-top: 38px;
     margin-left: 90px;
   }
 }
@@ -372,7 +372,6 @@
   height: 14px;
   top: 0;
   bottom: 0;
-  //left: 82%;
   transform: translateX(-50%);
   border: 2px solid #d22856;
   border-radius: 50%;
@@ -386,7 +385,11 @@
   }
 
   &--crop {
-    left: 75%;
+    left: 82%;
+
+    @media (min-width: @tablets) {
+      left: 76%;
+    }
 
     @media (min-width: @desktops) {
       left: 27%;

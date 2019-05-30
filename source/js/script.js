@@ -14,6 +14,7 @@ navToggle.addEventListener("click", function() {
   if (navList.classList.contains("main-nav__list--closed")) {
     navList.classList.remove("main-nav__list--closed");
     navList.classList.add("main-nav__list");
+    navToggle.classList.remove("main-nav__toggle--closed");
     if (pageHeader.classList.contains("page-header--open")) {
       pageHeader.classList.remove("page-header--open");
     } else {
@@ -27,6 +28,7 @@ navToggle.addEventListener("click", function() {
   } else {
     navList.classList.add("main-nav__list--closed");
     navList.classList.remove("main-nav__list--nojs");
+    navToggle.classList.add("main-nav__toggle--closed");
     pageHeader.classList.remove("page-header--open");
     prevPage.classList.remove("preview-page--short");
   }

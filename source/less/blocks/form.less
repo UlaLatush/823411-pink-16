@@ -29,13 +29,13 @@
   position: relative;
   margin: 0;
   left: 0;
-  padding: 34px 0 42px;
+  padding: 32px 0 43px;
   border: none;
   max-width: 100%;
 
   @media (min-width: @tablets) {
     padding: 0;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
     border: 2px solid @strongrey;
     border-radius: 2px;
   }
@@ -108,7 +108,6 @@
 
     @media (min-width: @desktops) {
       width: 100%;
-      margin-top: -10px;
     }
   }
 }
@@ -116,7 +115,7 @@
 .form__fields {
   &--contacts {
     @media (min-width: @tablets) {
-      padding: 22px 58px 0;
+      padding: 17px 58px 0;
     }
 
     @media (min-width: @desktops) {
@@ -124,7 +123,7 @@
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding-top: 19px;
+      padding-top: 12px;
     }
   }
 }
@@ -135,29 +134,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
-
-  /*&--fullname {
-    @media (max-width: @phones-max) {
-      padding-top: 24px;
-    }
-
-    @media (min-width: @tablets) {
-      width: 620px;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 5px;
-      order: -3;
-      padding: 0;
-      border: 0;
-    }
-
-    @media (min-width: @desktops) {
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 5px;
-      width: 435px;
-    }
-  }*/
 
   &--fullname {
     @media (min-width: @tablets) {
@@ -175,7 +151,7 @@
     @media (min-width: @tablets) {
       position: relative;
       margin: 0;
-      padding-bottom: 28px;
+      padding-bottom: 27px;
     }
 
     @media (min-width: @desktops) {
@@ -272,7 +248,7 @@
   text-align: center;
   color: @pink;
   font-size: @baseFontSize;
-  line-height: @baseLineHeight;
+  line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
 
@@ -284,13 +260,14 @@
 
   @media (min-width: @tablets) {
     position: relative;
-    top: -10px;
+    top: -15px;
     left: 50%;
     display: inline-block;
     vertical-align: top;
     padding: 0 32px;
     margin: 0;
     width: auto;
+    line-height: 30px;
     background-color: @white;
     transform: translateX(-50%);
   }
@@ -302,6 +279,8 @@
   }
 
   &--apps {
+    padding-top: 5px;
+
     @media (min-width: @tablets) {
       padding: 0 24px;
     }
@@ -310,7 +289,7 @@
   &--emotions {
     line-height: 30px;
     padding-top: 0;
-    padding-bottom: 13px;
+    padding-bottom: 9px;
 
     @media (min-width: @tablets) {
       padding: 0 38px;
@@ -321,25 +300,21 @@
 /* Checkboxes */
 
 .form__checkbox-fields {
-  //display: flex;
-  //flex-direction: column;
   padding-top: 23px;
 
   @media (min-width: @tablets) {
-    padding: 27px 58px 47px;
+    padding: 22px 58px 47px;
   }
 
   @media (min-width: @desktops) {
-    padding-top: 28px;
+    padding-top: 23px;
     padding-bottom: 56px;
   }
 
   &--achievements {
     @media (min-width: @desktops) {
       display: flex;
-      //flex-direction: row;
       width: 100%;
-      //padding: 27px 58px 47px;
     }
   }
 }
@@ -384,9 +359,17 @@
     border-color: @blue;
   }
 
-  &:disabled ~ .form__checkbox-label::before {
+  &:disabled ~ .form__checkbox-label {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+
+  &:disabled {
+    &:focus .form__checkbox-label::before,
+    ~ .form__checkbox-label:hover::before,
+    ~ .form__checkbox-label:active::before {
+      border-color: @grey-border;
+    }
   }
 
   &:checked ~ .form__checkbox-label::after {
@@ -450,12 +433,12 @@
   padding-top: 20px;
 
   @media (min-width: @tablets) {
-    padding: 30px 58px 52px;
+    padding: 24px 58px 52px;
   }
 
   &--apps {
     @media (min-width: @desktops) {
-      padding: 30px 74px 52px;
+      padding: 26px 74px 52px;
     }
   }
 }
@@ -494,6 +477,19 @@
     background-color: @pink;
     z-index: 2;
     border-radius: 50%;
+  }
+
+  &:disabled ~ .form__radio-label {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:disabled {
+    &:focus .form__radio-label::before,
+    ~ .form__radio-label:hover::before,
+    ~ .form__radio-label:active::before {
+      border-color: @grey-border;
+    }
   }
 }
 
@@ -538,18 +534,18 @@
   }
 
   @media (min-width: @desktops) {
-    padding: 5px 0 0 60px;
+    padding: 3px 0 5px 60px;
   }
 }
 
 /* Text Area */
 .form__textarea-fields {
   @media (min-width: @tablets) {
-    padding: 22px 58px 51px;
+    padding: 17px 58px 51px;
   }
 
   @media (min-width: @desktops) {
-    padding: 20px 58px 42px;
+    padding: 13px 58px 42px;
   }
 }
 
@@ -726,3 +722,4 @@
     margin: 0 auto;
   }
 }
+
