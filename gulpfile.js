@@ -101,5 +101,5 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("start", gulp.series("css", "webp", "copy", "js", "css", "sprite", "html", "server"));
-gulp.task("build", gulp.series("clean", "webp", "images", "copy", "js", "css", "sprite", "html"));
+gulp.task("start", gulp.series("webp", "copy", "js", "css", "sprite", "html", "server"));
+gulp.task("build", gulp.series("clean", "images", "webp", "copy", "js", "css", "sprite", "html"));
